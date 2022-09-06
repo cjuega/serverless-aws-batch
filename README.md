@@ -365,3 +365,4 @@ module.exports.hello = (event, context, callback) => {
 * [MEGApixel23](https://github.com/MEGApixel23)
 * [claydanford](https://github.com/claydanford)
 * [cjuega](https://github.com/cjuega)
+* [ceres6](https://github.com/ceres6)
