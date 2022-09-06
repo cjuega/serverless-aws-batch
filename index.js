@@ -40,6 +40,8 @@ class ServerlessAWSBatch {
         this.options = options;
         this.provider = this.serverless.getProvider('aws');
 
+        this.serverless.service.mergeArrays();
+
         this.batchFunctions = getBatchFunctions.bind(this)();
         this.batchFunctionsPackedIndividually = getBatchFunctionsPackedIndividually.bind(this)();
 
