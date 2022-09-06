@@ -43,15 +43,6 @@ class ServerlessAWSBatch {
         this.batchFunctions = getBatchFunctions.bind(this)();
         this.batchFunctionsPackedIndividually = getBatchFunctionsPackedIndividually.bind(this)();
 
-        serverless.configSchemaHandler.defineTopLevelProperty('batch', {
-            type: 'object',
-            properties: {
-                Type: { type: 'string' },
-                SecurityGroupIds: { type: 'array', items: { type: 'string' } },
-                Subnets: { type: 'array', items: { type: 'string' } },
-            },
-        });
-
         serverless.configSchemaHandler.defineFunctionProperties('aws', {
             properties: {
                 batch: {
